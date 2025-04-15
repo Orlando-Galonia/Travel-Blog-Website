@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References - Travel Vlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Travel Vlog Logo" class="logo">
+        <h1>References & Acknowledgments</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="top10tours.html">Top 10 Destinations</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="developers.html">Developers</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="references-container">
+            <h2>Sources and Credits</h2>
+            <ul>
+                <li>Images sourced from: <a href="https://unsplash.com/" target="_blank">Unsplash</a>, <a href="https://pexels.com/" target="_blank">Pexels</a></li>
+                <li>Travel information from: <a href="https://www.tourism.gov.ph/" target="_blank">Philippine Department of Tourism</a></li>
+                <li>Icons and graphics from: <a href="https://www.flaticon.com/" target="_blank">Flaticon</a></li>
+                <li>Website inspiration from: Various travel blogs</li>
+                <li>Developed by: Travel Philippines</li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        let lastScrollY = window.scrollY;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY) {
+                // Scrolling down
+                header.style.top = "-160px"; // hide header
+            } else {
+                // Scrolling up
+                header.style.top = "0";
+            }
+            lastScrollY = window.scrollY;
+        });
+        </script>
+
+<footer>
+    <p>&copy; 2025 Travel   <b></b>log Philippines
+        <div class="footer-nav">
+        <a href="home.html">Home</a>|
+        <a href="top10tours.html">top 10 tours</a>|
+        <a href="developers.html">Developer</a>|
+        <a href="contactus.html">Contact Us</a>|
+        <a href="references.html">References</a>|
+    </div></p>
+</footer>
+
+</body>
+</html>
