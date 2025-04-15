@@ -1,0 +1,471 @@
+body {
+    font-family: Britannic Bold;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+
+    background: url('ng.jpg') no-repeat center center;
+    background-size: cover;            /* Makes it fill the screen equally */
+    background-attachment: fixed;      /* Optional: keeps it in place when scrolling */
+    background-repeat: no-repeat;
+}
+
+
+header {
+    background: rgba(0, 0, 0, 0.384); /* Adjust transparency */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px 0;
+    transition: top 0.3s ease;
+}
+
+header img {
+    width: 100px;
+}
+
+header h1 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+.lets-go {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff; /* Blue background color */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.lets-go:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+.lets-go:active {
+    transform: translateY(2px); /* Slight downward movement when clicked */
+}
+
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #003f80;
+}
+
+
+main {
+    padding: 50px;
+    
+}
+h2 {
+    margin-top: 600px;
+}
+.video-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.video-wrapper video {
+    width: 400px;
+    height: 250px;
+}
+
+.video-wrapper p {
+    color: #242424;
+}
+
+p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #242424;
+}
+
+.destinations {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 1 auto;
+    margin-top: 0px; /* Push down the whole section */
+}
+
+.tour {
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: black;
+}
+
+.tour img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tour p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(54, 54, 54);
+}
+
+
+.contact-info {
+    max-width: 400px;
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    color: black;
+}
+
+
+.contact-info h2 {
+    color: red;
+}
+
+.contact-info p {
+    color: rgb(51, 50, 50);
+}
+
+
+main {
+    margin-top: 100px; /* Adds space below the fixed header */
+}
+
+/* Developers Section */
+.developers-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px;
+    margin-top: 100px;
+}
+
+.developer {
+    width: 250px;
+    height: 400px;                    /* Fixed height for uniformity */
+    background: #e0e0e0;
+    border: 1px solid #242424;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(175, 175, 175, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;          /* Keeps image-text order nice */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.developer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.developer img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;              /* Ensures all images fill evenly */
+    margin-bottom: 15px;
+}
+
+.developer h3 {
+    font-size: 20px;
+    color: black;
+    margin: 10px 0 5px;
+}
+
+.developer h2 {
+    font-size: 20px;
+    color: black;
+    margin: 10px 0 5px;
+}
+
+.developer p {
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    margin: 0;
+}
+
+
+.references-container {
+    max-width: 600px;
+    background: rgba(250, 250, 250, 0.87);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    text-align: left;
+}
+
+.references-container h2 {
+    color: #fd0000;
+}
+
+.references-container li {
+    color: #242424;
+}
+
+.references-container ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.references-container a {
+    color: #2bac04;
+    text-decoration: none;
+}
+
+.references-container a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .video, .tour, .developer {
+        width: 80%;
+    }
+
+    .contact-info, .info-container, .references-container {
+        max-width: 80%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+.logo {
+    width: 120px;  /* Medium size logo */
+    height: auto;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    animation: fadeIn 1.5s ease-in-out; /* Added animation for fade-in */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.inspiration-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .inspiration-card {
+    position: relative;
+  }
+  
+  .inspiration-card img {
+    width: 100%;
+    height: 300px; /* Larger image */
+    object-fit: cover;
+    border: 5px solid white; /* Box around the image */
+    border-radius: 10px; /* Optional: rounded corners for the image box */
+  }
+  
+  .inspiration-card p {
+    margin-top: 10px;
+    font-size: 18px; /* Normal size text */
+    text-align: center;
+    color: #333; /* Dark text for contrast */
+    padding: 0 10px;
+  }
+  
+
+.feature-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #fff3e0;
+    border-radius: 9px;
+    margin-top: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-section p {
+    color: rgb(26, 25, 25);
+}
+
+.feature-image {
+    width: 500px; /* Set a fixed width for the image */
+    height: 400px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+
+.feature-text {
+    flex: 1;
+    max-width: 600px;
+    color: #333;
+}
+
+.feature-text h3 {
+    color: #1b3e78;
+    margin-bottom: 10px;
+}
+
+.feature-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin: 100px 0 20px 0; /* Top, right, bottom, left margins */
+    font-size: 2em;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0 20px 0; /* Top, right, bottom, left margins */
+    font-size: 14;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    margin: 100px 0 20px 0; /* Top, right, bottom, left margins */
+    font-size: 2em;
+    color: red;
+}
+
+/* Top background image section */
+.top-section {
+    height: 100vh;
+    background: url('ng.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 150px 20px 40px; /* header height + spacing */
+    text-align: center;
+  }
+  
+  /* Bottom half background */
+  .bottom-section {
+    background-color: rgb(255, 255, 255);
+    padding: 60px 20px;
+    color: rgb(112, 7, 199);
+  }
+
+.travel-inspiration {
+    margin: 50px 20px;
+    padding: 20px;
+    background-color: rgba(85, 85, 85, 0.171); /* optional soft background */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.travel-inspiration h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px black;
+}
+
+.travel-inspiration p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+    color: #ffffff; /* White text */
+    font-size: 14px;
+    position: relative;
+}
+
+
+.footer-nav {
+    color: white;
+}
+
+.footer-nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-nav a:hover {
+    color: #fff;
+}
+
+p{
+    color: white;
+}
